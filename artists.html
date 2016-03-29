@@ -1,0 +1,230 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<script src="/assets/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700">
+		<title>Artists</title>
+		<link rel="stylesheet" type="text/css" href="css_artists.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		</script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+		</script>
+	</head>
+
+<style>
+
+body {
+	font-family: helvetica, sans-serif;
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 600px;
+	background-color: rgb(192,192,192);
+}
+div {
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	margin: 40px 0 0 0;
+	border-radius: 12px;
+}
+h1 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	margin: 50px 0 50px 0;
+}
+p {
+	color: black;
+	font-size: 15px;
+	text-align: justify;
+	transition: height .5s;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+	}
+
+.modal {
+	display: none;
+	position: center;
+	z-index: 1;
+	padding-top: 10px;
+	left: 0;
+	top: 0;
+	width: 600px;
+	height: 600px;
+	overflow: auto;
+	background-color: rgb(225,225,225);
+	background-color: rgba(0,0,0,0.4);
+}
+	
+.modal-content{
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 90%;
+	height: 95%;
+	font-size: 5px;
+	font-family: helvetica;
+}
+
+.close {
+	color: #3399CC;
+	float: right;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #3399CC;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.myBtn{
+	background-color: black;
+	color: white;
+	background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	width: 600px;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+
+small {
+	opacity: 0;
+}
+
+.grigoriev{
+	background-image: url(http://s1.afisha.net/MediaStorage/362cc88f19214ff8b2dbbe63112b.jpg)
+}
+.ferdinandov{
+	background: url(http://www.artmuseum.by/assets/images/News/2012_November/Venesuella/small_view.jpg);
+}
+.popov{
+	background: url(http://s60.radikal.ru/i167/1005/3a/43db012402e5.jpg);
+}
+.erzia{
+	background: url(http://img-fotki.yandex.ru/get/5407/5008846.e6/0_c1804_e365f095_orig);
+	background-size: auto 400px;
+	margin-bottom: 80px;
+}
+
+.glyphicon glyphicon-home{
+	margin-top: 50px;
+}
+
+</style>
+
+<body>
+
+<a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+
+
+<h1>Explore different patterns of exile.</br>
+	Each artist has his unique story.</h1>
+
+<div class="grigoriev">
+	<button id="myBtn0" class="mybtn">Boris Grigoriev</button>
+	<!-- Modal -->
+	<div id="myModal0" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+			<p><strong>Boris Grigoriev</strong></br>
+				By the time of the Revolution of 1917 Grigoriev had already established himself as a painter, book illustrator and theatre designer. He was a member of the most prestigious artistic societies such as World of Art and the Triangle. Although he participated in the decoration of the festival devoted to the 1st anniversary of the Revolution, he did not support the Bolsheviks. Thus, in September 1919 together with his wife and their five-year old son they illegally crossed the Finish border by boat and from Finland, then, moved to Berlin. There, he worked with the emigre press and actively exhibited. Shortly after, in 1920 he settled in Paris and continued his work in France. 
+				In 1928 he was invited by the Chilean government to teach at the Academy of Arts in Santiago. After giving only about 30 classes he terminated the contract. There are two versions of the reason for that. It was either Grigoriev himself who did not want to stay in the situation of political turmoil in the city after the coup of the government; or it was the Academy, dissatisfied and even shocked with extremely modernist approach to painting and teaching the artist had. So for a year from 1928 to 1929 Grigoriev with his family was traveling around Latin America, painting local subjects and participating in exhibitions. Within this short period of time he even managed to organize a number of personal exhibitions in Buenos Aires, Santiago, Valparaiso and Motevideo. In 1929 he returned to France. His works produced in Latin America are dispersed among local private collections and, unfortunately, have never been revealed to the public.   
+			</p>
+		</div>
+	</div>
+</div>
+
+	
+<div class="ferdinandov">
+	<button id="myBtn1" class="mybtn">Nikolas Ferdinandov</button>
+	<div id="myModal1" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+				<p><strong>Nikolas Ferdinandov</strong></br>
+				Before the Revolution the artists participated in major exhibitions of modern art in Moscow and St. Petersburg.  In 1912 he was awarded a gold medal in plastic arts for the works shown at the International Art Exhibition in Rome. With the outbreak of the First World War the pacifist and follower of the philosophy of Leo Tolstoy, Ferdinandov tried to escape the enrollment in the army. Eventually, in 1915 under the instruction of the Railway Council, where his father worked, the artists went to the USA and since then he never returned to Russia. In New York he opened a jewellery workshop, tried to organise a steamship line between the Caribbean Islands and South American continent. In 1919 he settled in Venezuela, first at Margarita island then in Caracas. In Venezuela he became known, first of all, as a decorator, watercolorist and jeweler. He taught painting and   designed private houses. He became an active member of the local artistic community, was in friendly relations with such local artists as Raphael Monasterios, Antonio Edmundo Monsanto, Malen Federico Brandt, and, especially, with Armando Reveron. When in 1922 he moved to Curacao he began studying marine flora and made a lot of naturalistic illustrations.  Following the artist’s will his relatives transferred the biggest part of his works (115 paintings) to Paris, where it was destroyed in the beginning of the Second World War. The major collection of his works is now in the National Gallery of Venezuela in Caracas with the latest acquisition of 43 gouaches in 1979. It is believed that Ferdinandov is portrayed in the novel <i>Foreigner</i> by R.Galiegos (1942).
+				</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="popov">
+	<button id="myBtn2" class="mybtn">Konstantin Popov</button>
+	<div id="myModal2" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+				<p><strong>Konstantin Popov</strong></br>
+					Studied at the Moscow School of Painting and Architecture One of his teachers was K.Korovin, the <i>Russian impressionist</i> who worked as the chief artist for the courtly theatres. Following the Revolution, Popov joint the White army and participated in the battles of the Civil War. Escaping with the surviving parts of the army he eventually found himself in Bulgaria. There, he studied in the Academy of arts and was then delegated to Rome to improve his artistic skills. In 1926 he moved to France where, initially, he earned his living at the <i>Citroen</i> factory. But soon, by a matter of chance, he met his former teacher Korovin who had emigrated to France. Korovin recommended the artist as a decorator to a prestigious Paris theatre and for the long 15 years that followed the Parisian public was enjoying Popov’s marvelous stage designs.</br> 
+					In 1936 he was offered a good job in Argentina, where the Russian community had already grown up to 200 000 people. So the artist accepted the invitation and settled in Buenos Aires. He actively participated in artistic life of the city. Popov participated in the creation of 5 000 square meters mural painting at the <i>Babilonia</i> theatre and decorated the local Palace of Dance. In addition, he was an active member of the Russian diaspora, for which, together with the newspaper <i>A Russian in Buenos Aires</i> he organized various events dedicated to the poet Aleksander Pushkin on the occasion of the cenetnary of his death. 
+
+				</p>
+		</div>
+	</div>
+</div>
+
+<div class="erzia">
+	<button id="myBtn3" class="mybtn">Stephan Erzia</button>
+	<div id="myModal3" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+				<p>Stephan Erzia</br>
+
+				</p>
+		</div>
+	</div>
+</div>
+
+
+<script>
+var spans = document.getElementsByClassName("close");
+
+var i = 0;
+var modal = document.getElementById("myModal"+i);
+var btn = document.getElementById("myBtn"+i);
+var span = spans[i];
+btn.onclick = function() { modal.style.display = "block"; }
+span.onclick = function() { modal.style.display = "none"; }
+
+i++;
+var modal1 = document.getElementById("myModal"+i);
+var btn1 = document.getElementById("myBtn"+i);
+var span1 = spans[i];
+btn1.onclick = function() { modal1.style.display = "block"; }
+span1.onclick = function() { modal1.style.display = "none"; }
+
+i++;
+var modal2 = document.getElementById("myModal"+i);
+var btn2 = document.getElementById("myBtn"+i);
+var span2 = spans[i];
+btn2.onclick = function() { modal2.style.display = "block"; }
+span2.onclick = function() { modal2.style.display = "none"; }
+
+i++;
+var modal3 = document.getElementById("myModal"+i);
+var btn3 = document.getElementById("myBtn"+i);
+var span3 = spans[i];
+btn3.onclick = function() { modal3.style.display = "block"; }
+span3.onclick = function() { modal3.style.display = "none"; }
+
+
+window.onclick = function(event) {
+	if (event.target == modal) { modal.style.display = "none"; }
+	else if (event.target == modal1) { modal1.style.display = "none"; }
+	else if (event.target == modal2) { modal2.style.display = "none"; }
+	else if (event.target == modal3) { modal3.style.display = "none"; }
+}
+
+</script>
+
+
+
+
+</body>
+</html>

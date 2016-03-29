@@ -1,1 +1,2 @@
 # mysecondsite
+cool

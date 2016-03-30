@@ -46,11 +46,15 @@ li {
 p {
 	color: solid black;
 	font-size: 100%;
-	text-align: left;
 	padding: none;
-	position: absolute;
-	margin-top: 200px;
-	margin-left: 200px;
+}
+#bheader
+{
+	position:relative;
+	float:left;
+	margin-top: 180px;
+	margin-left: 180px;
+
 }
 
 #header{
@@ -97,13 +101,17 @@ h4{
 	font-size: 200%;
 }
 
+.btn {
+	display: inline;
+}
+
 #copy{
 	float: right;
 	margin-right: 20px;
 	margin-top: 20px;
 	font-size: 80%;
-
 }
+
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
@@ -128,6 +136,7 @@ h4{
     text-align: left;
   }
 }
+
 
 
 

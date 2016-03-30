@@ -87,10 +87,13 @@ h4{
 }
 
 #footer{
+	
+	position: fixed;
 	height: 50px;
 	text-align: left;
 	margin-top: 50px;
-	padding-left: 100px;
+	margin-left: 50px;
+	padding-left: 180px;
 	background-color: #996699;
 	background: cover;		
 }

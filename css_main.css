@@ -87,9 +87,9 @@ h4{
 }
 
 #footer{
-	padding: 180px;
-	height: auto;
+	height: 50px;
 	text-align: left;
+	padding-left: 180px;
 	background-color: #996699;
 	background: cover;		
 }

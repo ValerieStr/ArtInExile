@@ -89,11 +89,9 @@ h4{
 #footer{
 	
 	position: fixed;
+	margin-bottom: 50px;
 	height: 50px;
 	text-align: left;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding-left: 180px;
 	background-color: #996699;
 	background: cover;		
 }
@@ -102,6 +100,7 @@ h4{
 	font-family:'Amatic SC', cursive;
 	color: #3399CC;
 	font-size: 200%;
+	padding-left: 180px;
 }
 
 .btn {
